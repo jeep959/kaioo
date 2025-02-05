@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下載電子書</title>
+</head>
+<body>
+    <h1>付款成功！</h1>
+    <p>感謝您的購買，請點擊下方按鈕下載電子書。</p>
+    <button id="downloadButton">下載電子書</button>
+
+    <script>
+        // 假設電子書的下載連結由後端動態生成
+        const downloadLink = "https://yourwebsite.com/path/to/ebook.pdf";
+
+        document.getElementById("downloadButton").addEventListener("click", function() {
+            window.location.href = downloadLink;
+        });
+    </script>
+</body>
+</html>
